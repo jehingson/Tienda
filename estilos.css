@@ -77,7 +77,7 @@ header .categoria a.activo {
 	position: relative;
 	width: 100%;
 	opacity: 0;
-	transition: opacity 0.5s linear 1s; /* Efecto de anumacion que va ser modificado con js*/ 
+	transition: opacity 0.5s linear 0.2s; /* Efecto de anumacion que va ser modificado con js*/ 
 }
 
 .grid.imagenes-cargadas{
