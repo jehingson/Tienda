@@ -9,7 +9,7 @@
 		grid.refreshItems().layout();
 		document.getElementById('grid').classList.add('imagenes-cargadas');
 
-
+       // Agregamos los listener de los enlaces para filtrar por categorias.
 		const enlaces = document.querySelectorAll('#categoria a');
 		/*en este codigo estamos guardado todas las categotias en la const enlaces
 		y asi poder interatuar con ellso */
@@ -35,7 +35,13 @@
 		});
 
 		//Agregamos el listener para la barra de  busqueda 
+        document.querySelector('#barra-busqueda').addEventListener('input',(evento) => {
+        	const busqueda = evento.target.value;
+        	//cada ves que escriba algo en la barra de busqueda estamos obteniendo 
+        	//su valor y sabremos que fue lo que escribio
+        	
+        	grid.filter((item) => item.getElement().dataset.etiquetas.includes(busqueda));
 
-		document.querySelector();
+        });
 
 	}); 
