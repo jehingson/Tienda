@@ -27,8 +27,8 @@
 				const categoria = evento.target.innerHTML;
 				/* EL target gurada el elemento selecionado 
 				el tolowerCase pasa el texton en minuscula*/
-				console.log(categoria);
-				grid.filter(`[data-categoria = "${categoria}"]`);  
+				 
+                categoria === 'Todos' ? grid.filter('[data-categoria]') : grid.filter(`[data-categoria = "${categoria}"]`);  
 				/* `` estas comillas es de la nueva version de javascripts */
 			});
 
