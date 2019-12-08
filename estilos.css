@@ -49,13 +49,14 @@ header .barra-busqueda{
 	padding: 0 20px;
 	border-radius: 100px;
 	border: none;
+	text-align: center;
 	font-size: 16px;
 }
 
 header .categoria{
 	display: flex;
 	justify-content: center;
-	flex-wrap;
+	flex-wrap: wrap;
 }
 
 header .categoria a{

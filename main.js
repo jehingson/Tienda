@@ -34,4 +34,8 @@
 
 		});
 
+		//Agregamos el listener para la barra de  busqueda 
+
+		document.querySelector();
+
 	}); 
