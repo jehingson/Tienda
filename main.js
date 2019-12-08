@@ -23,6 +23,13 @@
 				/* aqui por cada enlace le quitamos el activo*/
 				evento.target.classList.add('activo');
 				/*le asignamos el activo al enlace asignado*/
+
+				const categoria = evento.target.innerHTML;
+				/* EL target gurada el elemento selecionado 
+				el tolowerCase pasa el texton en minuscula*/
+				console.log(categoria);
+				grid.filter(`[data-categoria = "${categoria}"]`);  
+				/* `` estas comillas es de la nueva version de javascripts */
 			});
 
 		});
