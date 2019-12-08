@@ -1,0 +1,103 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body{
+	background: #f3f3f3;
+	font-family: "open sans", sans-serif;
+}
+a{
+	text-decoration: none;
+}
+.contenedor{
+	width: 90%;
+	max-width: 800px;
+	margin: auto;	
+}
+
+/*-------------------------*/
+/* HEADER */
+/*-------------------------*/
+
+header{
+	padding: 40px 0;
+}
+
+header .logo{
+	text-align: center;
+	margin-bottom: 40px;
+}
+
+header .logo p{
+	color: #9b9b9b;
+}
+
+header form{
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	margin-bottom: 20px;
+}
+
+header .barra-busqueda{
+	width: 70;
+	height: 40px;
+	line-height: 40px;
+	background: #fff;
+	padding: 0 20px;
+	border-radius: 100px;
+	border: none;
+	font-size: 16px;
+}
+
+header .categoria{
+	display: flex;
+	justify-content: center;
+	flex-wrap;
+}
+
+header .categoria a{
+	color: #9b9b9b;
+	margin: 10px 20px;
+	font-size: 18px;
+	font-weight: 700;
+}
+header .categoria a.activo {
+	color: #000;
+}
+
+/*---------------------------*/
+/* Grid  */
+/*---------------------------*/
+
+.grid{ 
+	position: relative;
+	width: 100%;
+	opacity: 0;
+	transition: opacity 0.5s linear 1s; /* Efecto de anumacion que va ser modificado con js*/ 
+}
+
+.grid.imagenes-cargadas{
+	opacity: 1; /* a lo que carga la pagina se pone esta opacidad 
+	            en el codigo js podemos ver la transicion  */
+}
+
+.grid .item{
+	position: absolute;
+	display: block;
+	padding: 0;
+	margin: 10px;
+	width: calc(33.33333% - 20px);
+}
+.grid .item-contenido{
+	position: relative;
+}
+
+.grid .item img{
+	width: 100%;
+	cursor: pointer;
+	vertical-align: top;
+	border-radius: 8px;
+}
