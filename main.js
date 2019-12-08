@@ -62,6 +62,16 @@
         	});
         });
 
+        //EventListener del boton de cerrar
+        document.querySelector('#btn-cerrar-popup').addEventListener('click',() => {
+            overlay.classList.remove('activo');
 
+        });
+
+         //EverListener del over
+         overlay.addEventListener('click', (evento) => {
+         	
+         	evento.target.id === 'overlay' ? overlay.classList.remove('activo'):'';
+         });
 
 	}); 
