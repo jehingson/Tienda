@@ -5,6 +5,7 @@
 }
 
 body{
+	
 	background: rgba(0,0,0,.1);
 	font-family: "open sans", sans-serif;
 }
@@ -23,14 +24,21 @@ a{
 
 header{
 	padding: 40px 0;
+
 }
 
 header .logo{
+
 	text-align: center;
 	margin-bottom: 40px;
 }
+header .logo .porta{
+	width: 100%;
+	position: relative;
+}
 
 header .logo p{
+
 	color: #9b9b9b;
 }
 
